@@ -1,0 +1,157 @@
+body {
+    background-color: #00d9ff;
+}
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;
+    background-color: white;
+    padding: 0 0 30px 0;
+}
+
+.tittle, .about h3 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;;
+}
+img {
+    width: 250px;
+    height: 320px;
+    border-radius: 15px;
+}
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-row-gap: 20px;
+}
+.about {
+    padding: 50px;
+}
+.card_inform {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+}
+
+.answer, .ask {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+.answer {
+    font-weight: 600;
+}
+
+.ask {
+    text-align: left;
+}
+.table {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 5px;
+    justify-self: center;
+    overflow-x: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+table {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    border-collapse: collapse;
+    text-align: center;
+    overflow-x: auto;
+    width: 100%;
+}
+
+table img {
+    height: 20px;
+    width:20px;
+}
+
+th, td:first-child {
+    background: #00d9ff;
+    color: white;
+    padding: 10px 22px;
+}
+
+th, td {
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: white;
+}
+td {
+    background: #d1e2f1;
+}
+
+th:first-child, td:first-child {
+    text-align: left;
+}
+.input_fields {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    padding-bottom: 20px;
+}
+input {
+    font-family: 'Open Sans', sans-serif;
+	width: 220px;
+    height: 28px;
+	font-size: 14px;
+	padding: 6px 0 4px 10px;
+	border: 1px solid #00d9ff;
+	background: #F6F6f6;
+	border-radius: 8px;
+}
+
+.button {
+    font-family: 'Open Sans', sans-serif;
+    width: 220px;
+    height: 38px;
+    font-size: 15px;
+    background: #00d9ff;
+	border-radius: 8px;
+    color: white;
+}
+.button:hover {
+    background: white;
+    color:#00d9ff;
+}
+
+.open_content {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.open_content h4:hover {
+    color: #00d9ff;
+}
+#hidden_text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px; 
+    padding: 30px;
+    display: none;
+}
+
+@media (min-width: 350px) and (max-width: 750px) {
+    .intro {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-row-gap: 30px;
+    }
+    .input_fields {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
